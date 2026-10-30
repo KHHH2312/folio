@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.0.0** — real page board · bind & extract · rotate & lift · page numbers.
+> **New — 1.1.0** — duplicate the selected sheets in place (Ctrl+D), undoable like every board edit.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -36,7 +36,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 |---|---|
 | **Real page board** | Local PDF.js thumbnails of every sheet, selectable and reorderable. |
 | **Bind & extract** | Merge the board in order, extract a selection, or split by ranges. |
-| **Rotate & lift** | Rotate or remove sheets from a working copy with undo. |
+| **Rotate, duplicate & lift** | Rotate, copy or remove sheets from a working copy with undo. |
 | **Page numbers** | Position, start number and size, drawn as native PDF text. |
 | **Watermark** | Text, colour, opacity and angle, applied to the working copy. |
 | **Metadata** | Title, author and subject edited in place. |
@@ -56,7 +56,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.0.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.1.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -71,13 +71,13 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 1. Install and launch Folio.
 2. Drop PDFs on the left bench; their sheets appear on the board.
-3. Select sheets, then use Bind, Extract, Split, Rotate, Watermark or Page numbers.
+3. Select sheets, then use Bind, Extract, Split, Rotate, Duplicate, Watermark or Page numbers.
 4. Download the result or shelve it back into the library.
 
 ## Verified
 
 - PDF/API suite: 60 checks green.
-- Browser end-to-end: 32 checks green, including no non-loopback requests.
+- Browser end-to-end: 34 checks green, including sheet duplication and no non-loopback requests.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 
 ## Security and privacy
