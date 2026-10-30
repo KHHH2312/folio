@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.0 — 2026-10-30
+
+- ZIP every output-tray result into one download.
+- Browser end-to-end suite grows to 44 checks.
+
 ## 1.7.0 — 2026-10-30
 
 - Image watermark stamps (PNG/JPEG) with scale and opacity across every sheet.

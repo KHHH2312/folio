@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.7.0** — image watermark stamps with scale and opacity.
+> **New — 1.8.0** — ZIP every finished result in one download.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -40,7 +40,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 | **Page numbers** | Position, start number and size, drawn as native PDF text. |
 | **Watermark** | Text or image stamp, colour, scale, opacity and angle, applied to the working copy. |
 | **Metadata** | Title, author and subject edited in place. |
-| **Ledger** | Every operation recorded; results can be shelved into the library. |
+| **Ledger** | Every operation recorded; results can be shelved or downloaded together as a ZIP. |
 | **Local only** | Loopback server, strict CSP, no telemetry and no remote assets. |
 
 <div align="center">
@@ -56,7 +56,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.7.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.8.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -77,7 +77,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 ## Verified
 
 - PDF/API suite: 66 checks green.
-- Browser end-to-end: 42 checks green, including image stamps, blank sheets, text extraction/save and duplication.
+- Browser end-to-end: 44 checks green, including ZIP-all, image stamps, blank sheets and text extraction.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 
 ## Security and privacy
