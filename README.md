@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.9.0** — back up and restore the whole PDF library.
+> **New — 1.11.0** — build a PDF from images, and find text across the whole board.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -40,7 +40,9 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 | **Page numbers** | Position, start number and size, drawn as native PDF text. |
 | **Watermark** | Text or image stamp, colour, scale, opacity and angle, applied to the working copy. |
 | **Metadata** | Title, author and subject edited in place. |
-| **Ledger** | Every operation recorded; results can be shelved or ZIPped; the library backs up to one JSON. |
+| **Find** | Search the selectable text of every sheet on the board; hits show a snippet and jump to the sheet. |
+| **From images** | Build a PDF from PNG/JPEG images — one sheet each, fitted or on A4/US Letter with margins. |
+| **Ledger** | Every operation recorded; results can be shelved or downloaded together as a ZIP. |
 | **Local only** | Loopback server, strict CSP, no telemetry and no remote assets. |
 
 <div align="center">
@@ -56,7 +58,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.9.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.11.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -71,13 +73,13 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 1. Install and launch Folio.
 2. Drop PDFs on the left bench; their sheets appear on the board.
-3. Select sheets, then use Bind, Extract, Split, Rotate, Duplicate, Watermark or Page numbers.
+3. Select sheets, then use Bind, Extract, Split, Rotate, Watermark or Page numbers.
 4. Download the result or shelve it back into the library.
 
 ## Verified
 
-- PDF/API suite: 69 checks green.
-- Browser end-to-end: 46 checks green, including library backup/restore, ZIP-all, image stamps and text extraction.
+- PDF/API suite: 72 checks green.
+- Browser end-to-end: 53 checks green, including images-to-PDF, board-wide text find, library backup/restore, ZIP-all and text extraction.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 
 ## Security and privacy
