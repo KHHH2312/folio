@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.0 — 2026-10-30
+
+- Save a sheet's extracted text as a -page-N.txt file.
+- Browser end-to-end suite grows to 40 checks.
+
 ## 1.4.0 — 2026-10-30
 
 - Copy the selectable text of any sheet into a preview dialog with a character count.
