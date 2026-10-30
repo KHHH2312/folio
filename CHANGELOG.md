@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0 — 2026-10-30
+
+- Copy the selectable text of any sheet into a preview dialog with a character count.
+- Browser end-to-end suite grows to 38 checks.
+
 ## 1.3.0 — 2026-10-30
 
 - Add blank A4 sheets anywhere in the board order.
