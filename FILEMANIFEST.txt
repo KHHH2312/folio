@@ -2,7 +2,7 @@
 # sha256  bytes  path (relative to the app folder in the release zip)
 92eede030e2bfe8f9920a31335f22ad72986999e74c43fe82be556ce80dfa729  1072  Folio.cer
 150bbee8d88c275151bef0cfc449c2074da163fddfc5fd82cc2712879d482c11  38  Folio.cmd
-56cac302d3d7bc4341bd05ae89998f4aad3d91f8ae5c84157d256baa5ac2ad29  249806248  Folio.exe
+2c56854357a302efbe3d9b4abe0eb41f27f92951d8d8ff9dab19d4b56851d6df  249806248  Folio.exe
 5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d  1096  LICENSE
 7dac8267ac6da8d959cfe88f5f055b18a397f10230380b5329125e167bf5639b  5705935  LICENSES.chromium.html
 8e865e7cd40faabcbfb4cd2be16ee290023c3a28796c4f95451440d80174225d  568418  chrome_100_percent.pak
@@ -69,9 +69,9 @@ f4d5f15daf9f3dd422f52421b93f0b5f6791a9928facb0e1b6dfd894a3814281  1060438  local
 56b39b119f9dc0e38e8c67a556a02cbe877d9e00833c8922f05d8faee80bcb13  592033  locales/zh-TW.pak
 cbcc81ea563a657730993df15749a5b6093739d7c999b67a0bbc4114051ca1a6  13371569  resources.pak
 c086422ae9f5944c1ebb42a5155986e77a25e49fd92a6f0549f6dbd6b81e81f8  1075  resources/app/LICENSE
-c033527c1f50ab2b06deb1a3a8ffa3c842468db6eb0a7bffcd131672a6b7bc5d  2248  resources/app/README.md
+9d5f5886a74371566b43beb69632e2268169ac2b93e8337b80aa20dae65c8658  2345  resources/app/README.md
 7e60d20caaba7a6f934ebd470da90ed71a1ea3705077ef863a5ada21a8a894bf  534  resources/app/THIRD-PARTY.md
-825b02bc278233ee95b0c8f97e45732908566f8efb3ff9cb1b79264fa0e825d2  3230  resources/app/app.json
+367af2d6aa50039464ab1baa84b0a8531fa7404a507a41ee50d1a978ac999da2  3344  resources/app/app.json
 92b0191dae7d61129a558bd43f65fcc452ca2eff158d21d7c0ed3c9e58cb285f  3961  resources/app/build/icon.png
 d92da056ab75488a706e0239a96212559513c18cc263c79dc4f8cacf842382e3  2453  resources/app/electron/main.cjs
 852850d7f55f076f7b710882592132c6f75943875c81832eae136523a7801b59  104  resources/app/node_modules/@napi-rs/canvas-win32-x64-msvc/README.md
@@ -2285,10 +2285,10 @@ f685f35daa1c75b3e6e3e2e9158de36130e34aee095498f65af9e508ea2d56b0  915  resources
 cd10f47b56da85cf5d1b7fa03f973b1f011bfe975e2a82a18ef7abe844491b12  10274  resources/app/node_modules/tslib/tslib.es6.js
 e14179f388a9690437165289d45ff7747f0f839538b5abec63d2dcfe21c2a5f4  32  resources/app/node_modules/tslib/tslib.html
 84df36bfcbbdfdbea006f78f150e70655d4801a402dc56a8e466806fe018e585  13204  resources/app/node_modules/tslib/tslib.js
-0298e76c967e6fb0e5975c2c150221f2c1a2e39df861c351de43e07910a9ce7e  114  resources/app/package.json
-3a7f2b12759357632329058e33e0dd4beeac6ce974c8d04d9913c9b7a82044a2  71137  resources/app/public/app.mjs
+27a32b2dc00272e3058830648fc5ef9ea1c67dd56c7c50de6539b3074d02863b  114  resources/app/package.json
+693e5aeff8533241c6c860733bb1bb225ca49b9ca7961574191a369f84503edc  73022  resources/app/public/app.mjs
 dd904a063a2309e6890c28caa802fa3e3fbb3ef1798079a746e891e3adcb2b79  577  resources/app/public/favicon.svg
-83fa90a74d5b063c9c658ac91d973da915c5ca2ca5f8e933f6ec4357a7300886  15008  resources/app/public/index.html
+bd5d143d2c42b0377ccfec59f2bf261f7e0337188bb31dbfba6ce946c09dc0df  15480  resources/app/public/index.html
 a8f53c55b24bc2c9ab05e6cba4cd163b836477b22fdf7930a66e2e08c6a48b73  25953  resources/app/public/styles.css
 0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594  10174  resources/app/public/vendor/PDFJS-LICENSE.txt
 d92a261336dc18b8c03a46eb4d462382d33f4338fa195d303256b2031434c874  2404  resources/app/public/vendor/cmaps/78-EUC-H.bcmap
@@ -2478,7 +2478,7 @@ d2c4d5b3e115a519cb58eb691aa64538397e2611f9ebe801392cf9667997e7dc  22154  resourc
 a224075ac17495ad0a3af3bc0a419ac0704a8b3fd1095456201fb9b095fc281d  135124  resources/app/public/vendor/standard_fonts/LiberationSans-BoldItalic.ttf
 832b4406dbef23628800d3aaad21048534ac84d7e3ad955be83b8172ed8ef512  162036  resources/app/public/vendor/standard_fonts/LiberationSans-Italic.ttf
 f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f  139512  resources/app/public/vendor/standard_fonts/LiberationSans-Regular.ttf
-98ed6505d9238044964d2f17143ebbe1a8707de27e446f666d0a0f20a3820d18  19381  resources/app/server.mjs
+ce57c918b1e25ea814a6c3d3d761f77d3b91dbe4a40f617c782ed89b9af68fa2  19894  resources/app/server.mjs
 7ee6467afcb47fc118cf4372b9b5e81c0bce2e8fcb64aa2ba56c0ead8193853d  13491  resources/app/shared/pdfops.mjs
 eac55d6cfcf4eab7e31a45356567f549ef7eb669e3699226b48a8492ad34f510  110835  resources/default_app.asar
 2780bd4c36725caf4aaf04b894377e55adf59db2fe6e32dcdc56e6dd69664d10  374096  snapshot_blob.bin
