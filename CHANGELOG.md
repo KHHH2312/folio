@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.9.0 — 2026-10-30
+
+- Back up the whole PDF library to one JSON file; restore it through the normal inspector.
+- Suite grows to 69 checks; browser pass to 46.
+
 ## 1.8.0 — 2026-10-30
 
 - ZIP every output-tray result into one download.
