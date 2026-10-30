@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.0 — 2026-10-30
+
+- Image watermark stamps (PNG/JPEG) with scale and opacity across every sheet.
+- PDF/API suite grows to 66 checks; browser pass to 42.
+
 ## 1.6.0 — 2026-10-30
 
 - Blank sheets in A4 or US Letter, built at exact page sizes.
