@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.5.0** — save a sheet's extracted text as a .txt file.
+> **New — 1.6.0** — blank sheets in A4 or US Letter.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -36,7 +36,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 |---|---|
 | **Real page board** | Local PDF.js thumbnails of every sheet, selectable and reorderable. |
 | **Bind & extract** | Merge the board in order, extract a selection, or split by ranges. |
-| **Blank, rotate, duplicate & lift** | Add blank A4 sheets, rotate, copy or save text, duplicate or remove sheets with undo. |
+| **Blank, rotate, duplicate & lift** | Add blank A4 or US Letter sheets, rotate, copy or save text, duplicate or remove sheets with undo. |
 | **Page numbers** | Position, start number and size, drawn as native PDF text. |
 | **Watermark** | Text, colour, opacity and angle, applied to the working copy. |
 | **Metadata** | Title, author and subject edited in place. |
@@ -56,7 +56,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.5.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.6.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -76,7 +76,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Verified
 
-- PDF/API suite: 62 checks green.
+- PDF/API suite: 64 checks green.
 - Browser end-to-end: 40 checks green, including blank sheets, text extraction/save, duplication and no non-loopback requests.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 

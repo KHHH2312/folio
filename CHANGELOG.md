@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6.0 — 2026-10-30
+
+- Blank sheets in A4 or US Letter, built at exact page sizes.
+- PDF/API suite grows to 64 checks.
+
 ## 1.5.0 — 2026-10-30
 
 - Save a sheet's extracted text as a -page-N.txt file.
