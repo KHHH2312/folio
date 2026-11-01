@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.17.0** — text of the board - every sheet as one markdown file.
+> **New — 1.18.0** — booklet - fold the board saddle-stitch for stapled printing.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -49,6 +49,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 | **Pages per sheet** | Bind puts one, two side by side or four to a sheet — the pages are re-flowed onto larger sheets for printing, and blank sheets keep their cell. |
 | **Split every N** | Cut the board into files of N pages each without typing ranges; the last file takes the remainder. |
 | **Text of the board** | Save every sheet as one markdown file — a section per sheet in board order, with the copy the page actually carries and a marker where a sheet has no text layer. |
+| **Booklet** | Tick Booklet and the bind folds the board saddle-stitch — last page against first, second against second-last — padding a short run with blank leaves so the fold is complete. Works with two-up and four-up sheets. |
 
 <div align="center">
 <img src="docs/selection.png" alt="Folio" width="49%">
@@ -63,7 +64,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.17.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.18.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -83,8 +84,8 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Verified
 
-- PDF/API suite: 98 checks green.
-- Browser end-to-end: 66 checks green, including the whole-board text export as one markdown file, including four-up imposition on a live board, every-N split, reverse board, library rename, images-to-PDF and board-wide text find.
+- PDF/API suite: 107 checks green.
+- Browser end-to-end: 68 checks green, including the whole-board text export as one markdown file, including four-up imposition on a live board, every-N split, reverse board, library rename, images-to-PDF and board-wide text find.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 
 ## Security and privacy
