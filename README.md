@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.14.0** — split every N pages, rename a library file and build a PDF from images.
+> **New — 1.15.0** — reverse the whole board in one undoable step.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -37,6 +37,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 | **Real page board** | Local PDF.js thumbnails of every sheet, selectable and reorderable. |
 | **Bind & extract** | Merge the board in order, extract a selection, or split by ranges. |
 | **Blank, rotate, duplicate & lift** | Add blank A4 or US Letter sheets, rotate, copy or save text, duplicate or remove sheets with undo. |
+| **Reverse the board** | Turn the whole stack end to end — last sheet first — as one undoable step. |
 | **Page numbers** | Position, start number and size, drawn as native PDF text. |
 | **Watermark** | Text or image stamp, colour, scale, opacity and angle, applied to the working copy. |
 | **Metadata** | Title, author and subject edited in place. |
@@ -60,7 +61,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.14.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.15.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -81,7 +82,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 ## Verified
 
 - PDF/API suite: 80 checks green.
-- Browser end-to-end: 58 checks green, including every-N split, library rename, images-to-PDF and board-wide text find.
+- Browser end-to-end: 60 checks green, including every-N split, reverse board, library rename, images-to-PDF and board-wide text find.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 
 ## Security and privacy
