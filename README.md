@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.15.0** — reverse the whole board in one undoable step.
+> **New — 1.16.0** — pages per sheet - bind two-up or four-up for printing.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -46,6 +46,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 | **Ledger** | Every operation recorded; results can be shelved or downloaded together as a ZIP. |
 | **Local only** | Loopback server, strict CSP, no telemetry and no remote assets. |
 | **Rename** | Rename a library file in place; pages, metadata and board links stay untouched. |
+| **Pages per sheet** | Bind puts one, two side by side or four to a sheet — the pages are re-flowed onto larger sheets for printing, and blank sheets keep their cell. |
 | **Split every N** | Cut the board into files of N pages each without typing ranges; the last file takes the remainder. |
 
 <div align="center">
@@ -61,7 +62,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.15.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.16.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -81,8 +82,8 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Verified
 
-- PDF/API suite: 80 checks green.
-- Browser end-to-end: 60 checks green, including every-N split, reverse board, library rename, images-to-PDF and board-wide text find.
+- PDF/API suite: 89 checks green.
+- Browser end-to-end: 62 checks green, including four-up imposition on a live board, every-N split, reverse board, library rename, images-to-PDF and board-wide text find.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 
 ## Security and privacy
