@@ -17,7 +17,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 </div>
 
-> **New — 1.16.0** — pages per sheet - bind two-up or four-up for printing.
+> **New — 1.17.0** — text of the board - every sheet as one markdown file.
 > [Changelog →](CHANGELOG.md)
 
 ---
@@ -48,6 +48,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 | **Rename** | Rename a library file in place; pages, metadata and board links stay untouched. |
 | **Pages per sheet** | Bind puts one, two side by side or four to a sheet — the pages are re-flowed onto larger sheets for printing, and blank sheets keep their cell. |
 | **Split every N** | Cut the board into files of N pages each without typing ranges; the last file takes the remainder. |
+| **Text of the board** | Save every sheet as one markdown file — a section per sheet in board order, with the copy the page actually carries and a marker where a sheet has no text layer. |
 
 <div align="center">
 <img src="docs/selection.png" alt="Folio" width="49%">
@@ -62,7 +63,7 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Install
 
-1. Download **Folio-1.16.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
+1. Download **Folio-1.17.0-win32-x64.zip** from [Releases](https://github.com/KHHH2312/folio/releases/latest).
 2. Verify it against `SHA256SUMS.txt`:
    ```powershell
    Get-FileHash .\Folio-*-win32-x64.zip -Algorithm SHA256
@@ -82,8 +83,8 @@ A private PDF workbench for Windows. No uploads, no account, no telemetry.
 
 ## Verified
 
-- PDF/API suite: 89 checks green.
-- Browser end-to-end: 62 checks green, including four-up imposition on a live board, every-N split, reverse board, library rename, images-to-PDF and board-wide text find.
+- PDF/API suite: 98 checks green.
+- Browser end-to-end: 66 checks green, including the whole-board text export as one markdown file, including four-up imposition on a live board, every-N split, reverse board, library rename, images-to-PDF and board-wide text find.
 - Packaged app passes the source-parity integrity gate and is published with SHA-256 sums and a per-file manifest.
 
 ## Security and privacy
